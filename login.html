@@ -1,17 +1,149 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <title>LKC.NET Hotspot</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>LKC.NET Hotspot</title>
+
+<link rel="icon" href="assets/img/logo.png">
+
+<link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
 
-<h1>LKC.NET</h1>
+<div class="background"></div>
+
+<div class="login-container">
+
+    <div class="login-card">
+
+        <img src="assets/img/logo.png" class="logo" alt="LKC.NET">
+
+        <h1>LKC.NET</h1>
+
+        <p class="subtitle">
+            Internet Cepat • Stabil • Unlimited
+        </p>
+
+        $(if error)
+
+        <div class="error-box">
+
+            $(error)
+
+        </div>
+
+        $(endif)
+
+        <form name="login"
+
+              action="$(link-login-only)"
+
+              method="post">
+
+            <input type="hidden"
+
+                   name="dst"
+
+                   value="$(link-orig)">
+
+            <input type="hidden"
+
+                   name="popup"
+
+                   value="true">
+
+            <div class="input-group input-user">
+
+                <input
+
+                    type="text"
+
+                    name="username"
+
+                    placeholder="Username / Voucher"
+
+                    autocomplete="off"
+
+                    required>
+
+            </div>
+
+            <div class="input-group input-pass">
+
+                <input
+
+                    type="password"
+
+                    id="password"
+
+                    name="password"
+
+                    placeholder="Password"
+
+                    required>
+
+            </div>
+
+            <label class="show-password">
+
+                <input
+
+                    type="checkbox"
+
+                    onclick="togglePassword()">
+
+                Tampilkan Password
+
+            </label>
+
+            <button
+
+                class="login-button"
+
+                type="submit">
+
+                LOGIN
+
+            </button>
+
+        </form>
+
+        <div class="info">
+
+            <div id="clock"></div>
+
+            <marquee>
+
+                Selamat Datang di LKC.NET • Hubungi WhatsApp 081313655400
+
+            </marquee>
+            <div class="footer">
+
+© 2026 LKC.NET
+
+<br>
+
+WhatsApp : 081313655400
+
+</div>
+
+        </div>
+
+    </div>
+
+</div>
 
 <script src="assets/js/script.js"></script>
 
 </body>
+
 </html>
