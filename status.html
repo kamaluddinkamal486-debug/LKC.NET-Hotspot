@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Status - LKC.NET</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+<div class="login-card">
+
+<img src="assets/img/logo.png" class="logo" alt="LKC.NET">
+
+<h1>Status Hotspot</h1>
+
+<p class="subtitle">
+Anda berhasil terhubung ke Internet
+</p>
+
+<div class="info">
+<table width="100%">
+<tr>
+<td>Username</td>
+<td>$(username)</td>
+</tr>
+
+<tr>
+<td>IP Address</td>
+<td>$(ip)</td>
+</tr>
+
+<tr>
+<td>MAC Address</td>
+<td>$(mac)</td>
+</tr>
+
+<tr>
+<td>Upload</td>
+<td>$(bytes-in-nice)</td>
+</tr>
+
+<tr>
+<td>Download</td>
+<td>$(bytes-out-nice)</td>
+</tr>
+
+<tr>
+<td>Connected</td>
+<td>$(uptime)</td>
+</tr>
+
+<tr>
+<td>Time Left</td>
+<td>$(session-time-left)</td>
+</tr>
+
+</table>
+</div>
+
+<br>
+
+<form action="$(link-logout)" method="post">
+
+<input type="submit"
+value="LOGOUT"
+class="login-button">
+
+</form>
+
+<div class="copyright">
+
+© 2026 LKC.NET
+
+<br>
+
+WhatsApp :
+081313655400
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
